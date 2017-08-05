@@ -17,8 +17,9 @@ RUN apt-get update -y && apt-get -y install binutils libproj-dev libgeos-dev swi
     g++ \
     wget \
     libxml2 libxml2-dev \
-    gfortran bison byacc flex csh make cmake wget p7zip-full\
-    nano subversion git curl bison flex libjpeg-dev p7zip-full jbigkit-bin libjbig-dev
+    gfortran bison byacc flex csh make cmake wget p7zip-full \
+    nano subversion git curl bison flex libjpeg-dev p7zip-full jbigkit-bin libjbig-dev \
+    libsm6 python-qt4
 
 RUN apt-get install -y software-properties-common && add-apt-repository -y ppa:ubuntugis/ubuntugis-unstable && \
     apt -y update && apt -y upgrade
