@@ -1,0 +1,10 @@
+version: '2'
+services:
+ dev:
+   image: image_analysis:latest
+   build: .
+   volumes:
+     - .:/app
+   ports:
+     - "8000:8000"
+     - "8001:8001"
